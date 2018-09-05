@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lyrics</title>
+  <link rel="stylesheet" type="text/css" href="../styles/lyrics.css">
+</head>
+
+<body>
+  <div class="container">
+    <p>
+      <!-- replaces \n with an HTML <br> that can get rendered -->
+      {% autoescape false %}
+        {{ lyrics | replace("\n", "<br/>") }}
+      {% endautoescape %}
+    </p>
+    <h2>
+      {{error}}
+    </h2>
+  </div>
+</body>
+
+</html>

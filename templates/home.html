@@ -6,11 +6,16 @@
 </head>
 
 <body>
-  <form action="/lyrics" method="post">
-    <input type="text" name="track_title" placeholder="Track title"></input>
-    <input type="text" name="artist_name" placeholder="Artist"></input>
-    <input type="submit" value="Find my lyrics!"></input>
-  </form>
+  <div class="header">
+    <h3>&lt;/Lyric&gt; Finder</h3>
+  </div>
+  <div class="search">
+    <form action="/lyrics" method="post">
+      <input type="text" name="track_title" placeholder="track title"></input>
+      <br><input type="text" name="artist_name" placeholder="artist"></input>
+      <br><input type="submit" value="find my lyrics!"></input>
+    </form>
+  </div>
 </body>
 
 </html>

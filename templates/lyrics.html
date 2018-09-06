@@ -7,15 +7,28 @@
 
 <body>
   <div class="container">
-    <p>
-      <!-- replaces \n with an HTML <br> that can get rendered -->
-      {% autoescape false %}
-        {{ lyrics | replace("\n", "<br/>") }}
-      {% endautoescape %}
-    </p>
-    <h2>
-      {{error}}
-    </h2>
+    <div class="header">
+      <h3>&lt;/Lyric&gt; Finder</h3>
+    </div>
+    <div class="navbar">
+      <a class="navbutton" href="/">search more</a>
+    </div>
+    <div class="lyrics">
+      <p>
+        <!-- replaces \n with an HTML <br> that can get rendered -->
+        {% autoescape false %}
+          {{ lyrics | replace("\n", "<br/>") }}
+        {% endautoescape %}
+      </p>
+      <h2>
+        {{error}}
+      </h2>
+    </div>
+  </div>
+  <div class="below">
+    <div class="below-box">
+      <p> © 2018<br>created by: valeria l. and powered by lyrics.ovh</p>
+    </div>
   </div>
 </body>
 

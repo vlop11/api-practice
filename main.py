@@ -43,7 +43,7 @@ class LyricsPage(webapp2.RequestHandler):
             lyrics_dict = {"lyrics": song_lyrics}
         # if no lyrics are found, do this
         else:
-            lyrics_dict = {"error": "No lyrics were found. Search again please"}
+            lyrics_dict = {"error": "sorry! no lyrics were found"}
 
         lyrics_template = jinja_current_directory.get_template('templates/lyrics.html')
         self.response.write(lyrics_template.render(lyrics_dict))
